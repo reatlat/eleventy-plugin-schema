@@ -1,7 +1,5 @@
-"use strict";
-
-const image = require("./image");
-const person = require("./person");
+import image from "./image";
+import person from "./person";
 
 /**
  * mainEntity FAQ List structured data. See: https://schema.org/mainEntity.
@@ -27,7 +25,7 @@ const person = require("./person");
  * @returns {Object|undefined}
  */
 
-module.exports = (item) => {
+export default (item) => {
   if (!item) {
     return;
   }

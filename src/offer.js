@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Offer structured data. See https://schema.org/Offer.
  *
@@ -14,7 +12,7 @@
  * @returns {Object|undefined}
  */
 // eslint-disable-next-line max-statements, complexity
-module.exports = (offer) => {
+export default (offer) => {
   if (!offer) {
     return;
   }

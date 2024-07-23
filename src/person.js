@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Person structured data. See https://schema.org/Person.
  *
@@ -7,7 +5,7 @@
  * @param {String} person.name Name.
  * @returns {Object|undefined}
  */
-module.exports = (person) => {
+export default (person) => {
   if (!person) {
     return;
   }

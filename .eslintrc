@@ -1,5 +1,4 @@
 {
-  "extends": ["hardcore", "hardcore/node"],
   "env": {
     "node": true
   },

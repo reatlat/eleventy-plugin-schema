@@ -1,8 +1,6 @@
-"use strict";
-
-const offer = require("./offer");
-const rating = require("./rating");
-const review = require("./review");
+import offer from"./offer";
+import rating from"./rating";
+import review from"./review";
 
 /**
  * Product structured data. See: https://schema.org/Product.
@@ -34,7 +32,7 @@ const review = require("./review");
  * @param {String} param0.meta.identifier A identifier for the item.
  * @returns {Object}
  */
-module.exports = ({ meta }) => {
+export default ({ meta }) => {
   const product = {
     "@type": "Product",
     aggregateRating: rating(meta.rating),

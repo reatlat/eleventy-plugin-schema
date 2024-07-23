@@ -1,9 +1,6 @@
-"use strict";
-
-const test = require("ava");
-
-const review = require("../src/review");
-const parsedEqual = require("../utils/parsedEqual");
+import test from "ava";
+import review from "../src/review.js";
+import parsedEqual from "../utils/parsedEqual.js";
 
 test("review", (t) => {
   const reviews = [

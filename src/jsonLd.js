@@ -1,6 +1,4 @@
-"use strict";
-
-const main = require("./main");
+import main from "./main";
 
 /**
  * Structured data script.
@@ -48,7 +46,7 @@ const main = require("./main");
  * @param {String} param0.meta.identifier A identifier for the item.
  * @returns {String}
  */
-module.exports = ({ meta, type, tags = [] }) => {
+export default ({ meta, type, tags = [] }) => {
   if (!meta) {
     return "";
   }

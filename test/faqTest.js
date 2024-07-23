@@ -1,9 +1,6 @@
-"use strict";
-
-const test = require("ava");
-
-const faq = require("../src/faq");
-const parsedEqual = require("../utils/parsedEqual");
+import test from "ava";
+import faq from "../src/faq.js";
+import parsedEqual from "../utils/parsedEqual.js";
 
 test("faq single", (t) => {
   const meta = {

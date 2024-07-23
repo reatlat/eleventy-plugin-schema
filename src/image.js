@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Image structured data. See https://schema.org/ImageObject.
  *
@@ -9,7 +7,7 @@
  * @param {String} image.height Image height.
  * @returns {Object|undefined}
  */
-module.exports = (image) => {
+export default (image) => {
   if (!image) {
     return;
   }

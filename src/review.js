@@ -1,6 +1,4 @@
-"use strict";
-
-const reviewList = require("./reviewList");
+import reviewList from "./reviewList";
 
 /**
  * Review structured data. See: https://schema.org/Review.
@@ -11,7 +9,7 @@ const reviewList = require("./reviewList");
  * @returns {Object|undefined}
  */
 
-module.exports = (reviews) => {
+export default (reviews) => {
   if (!reviews) {
     return;
   }

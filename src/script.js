@@ -1,6 +1,4 @@
-"use strict";
-
-const jsonLd = require("./jsonLd");
+import jsonLd from "./jsonLd";
 
 /**
  * Structured data script.
@@ -48,7 +46,7 @@ const jsonLd = require("./jsonLd");
  * @param {String} param0.meta.identifier A identifier for the item.
  * @returns {String}
  */
-module.exports = (data) => {
+export default (data) => {
   if (!data.meta) {
     return "";
   }
